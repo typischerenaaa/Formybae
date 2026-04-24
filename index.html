@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrix Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Share+Tech+Mono&family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<canvas id="matrix"></canvas>
+<div id="scanlines"></div>
+<div id="vignette"></div>
+<div id="grain"></div>
+
+<div id="datestamp"></div>
+<div id="signal">LIVE SIGNAL</div>
+
+<button id="decrypt-btn" onclick="openLetter()">
+  <div class="btn-inner">
+    <span class="c tl"></span>
+    <span class="c tr"></span>
+    <span class="c bl"></span>
+    <span class="c br"></span>
+    decrypt message
+    <span class="chevron"></span>
+  </div>
+</button>
+
+<div id="letter-panel">
+  <div class="letter-box">
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <div class="letter-inner">
+      <div class="letter-glitch-stripe"></div>
+      <div class="letter-header">
+        <div class="letter-eyebrow">transmission received</div>
+        <div class="letter-id" id="msg-id">MSG-00000</div>
+      </div>
+      <div class="letter-divider"></div>
+      <div class="letter-body">
+        <div id="letter-text"></div>
+      </div>
+      <div class="letter-footer">
+        <div class="letter-line"></div>
+        <div class="letter-sig">encrypted with love</div>
+        <div class="letter-line" style="background: linear-gradient(90deg, transparent, rgba(255,45,135,0.18));"></div>
+      </div>
+    </div>
+    <button id="close-btn" onclick="closeLetter()">close transmission</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,9 +1,7 @@
-// MATRIX LOVE AIT AMRANE MODE FOR NICKY 
+// AIT AMRANE MATRIX FOR NICKY
+
+
 //love youuuuuuu so muchhh in case you're reading this <3
-
-
-
-
 // CURSOR te3 chkupi 
 const cursorDot  = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursor-ring');
@@ -65,7 +63,7 @@ let state      = "rain";
 let startTime  = Date.now();
 let msgOpacity = 0;
 
-const WORDS    = ["HAPPY", "NAME\nDAY", "BABY"];
+const WORDS    = ["HAPPY", "NAME\nDAY", "BABY 🩵 "];
 let wordIdx    = 0;
 let wordTimer  = 0;
 const WORD_DUR = 1700;
@@ -178,7 +176,7 @@ you'd be the line that makes my everything run.
 You're my favourite glitch in reality.
 I love you so fucking much 
 
-Happy Name Day, my nicky 🩵 .`;
+Happy Svátek , my nicky 🩵 .`;
 
 const GLYPHS = "01001101011010110100100101000010";
 
